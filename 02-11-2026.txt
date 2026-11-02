@@ -1,0 +1,34 @@
+================================================================================
+                    DAILY WORK LOG - 02-11-2026 (Monday)
+================================================================================
+
+[PROJECT: SANCHAY]
+--------------------------------------------------------------------------------
+Task 1   : GRN Button are disabled
+Solution : Changed them by default enabled
+Status   : Completed
+
+Task 2   : Add custom filters in Vendors page by Admin Side
+Solution : Added Multiple filter button for search
+Status   : Completed
+
+Task 3   : Change Vendor user manual and Eligibility criteria pdfs
+Solution : Changed the path and pdfs
+Status   : Completed
+
+Task 4   : RFQ Dashboard UI
+Solution : Changed the UI Responsive and User interactive
+Status   : Completed
+
+
+[PROJECT: KUD]
+--------------------------------------------------------------------------------
+Task 1   : BSHM Stream not coming in a particular Stream group
+Solution : Changed the Stream group name
+Status   : Completed
+
+Task 2   : Need to Specialization
+Solution : Added Mechanical Specialization
+Status   : Completed
+
+================================================================================
