@@ -18,6 +18,14 @@
 
 ---
 
+### 🔹 Task 3: Annual / Earlier Code Mismatch During Admin Verification
+- **Section Contact**: `8892225850`
+- **Issue**: During administrative verification, students are receiving mismatched Annual/Earlier codes, forcing staff to update them manually.
+- **Root Cause & Solution**: The system is currently deriving the Annual/Earlier code from the student's individual result declaration date. Instead, it must be updated to reference the designated **section declaration date** for accurate code generation.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
 <br/>
 
 ## 📅 02-11-2026
