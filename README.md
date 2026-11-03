@@ -1,5 +1,6 @@
 # 📓 MyWorkDairy
 
-Everyday Work Tracker. Each day's work log is maintained in its own dedicated file:
+Everyday work tracking organized by project. Each project folder contains a dedicated `WorkLog.txt` appended with daily progress:
 
-- 📄 [`02-11-2026.txt`](./02-11-2026.txt) - Sanchay (4 tasks), KUD (2 tasks)
+- 📁 **[Sanchay](./Sanchay/)** ➔ [`Sanchay/WorkLog.txt`](./Sanchay/WorkLog.txt)
+- 📁 **[KUD](./KUD/)** ➔ [`KUD/WorkLog.txt`](./KUD/WorkLog.txt)
