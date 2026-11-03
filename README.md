@@ -1,6 +1,10 @@
 # 📓 MyWorkDairy
 
-Everyday work tracking organized by project. Each project folder contains a dedicated `WorkLog.txt` appended with daily progress:
+Personal work tracker for daily queries, solutions, task updates, and project status across all repositories.
 
-- 📁 **[Sanchay](./Sanchay/)** ➔ [`Sanchay/WorkLog.txt`](./Sanchay/WorkLog.txt)
-- 📁 **[KUD](./KUD/)** ➔ [`KUD/WorkLog.txt`](./KUD/WorkLog.txt)
+### 📁 Projects:
+- 🏢 **[Sanchay](./Sanchay/)** ➔ View [`Sanchay/WorkLog.md`](./Sanchay/WorkLog.md)
+- 🎓 **[KUD](./KUD/)** ➔ View [`KUD/WorkLog.md`](./KUD/WorkLog.md)
+
+---
+*Maintained daily with latest dates on top.*
