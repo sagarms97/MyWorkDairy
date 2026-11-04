@@ -2,10 +2,20 @@
 
 Personal work tracker for daily queries, solutions, task updates, and project status across all repositories.
 
-### 📁 Projects:
-- 🏢 **[Sanchay](./Sanchay/)** ➔ View [`Sanchay/WorkLog.md`](./Sanchay/WorkLog.md)
-- 🎓 **[KUD](./KUD/)** ➔ View [`KUD/WorkLog.md`](./KUD/WorkLog.md)
-- 📚 **[Koha](./Koha/)** ➔ View [`Koha/WorkLog.md`](./Koha/WorkLog.md)
+### 📊 Analytics & Dashboards:
+- 🌐 **[Global Summary Dashboard](./Global_Summary.md)** *(Aggregate counts, Daily/Weekly/Monthly views)*
+
+### 📁 Project Logs & Individual Analytics:
+
+- 📂 **KUD**:
+  - 📝 [Work Log](./KUD/WorkLog.md)
+  - 📈 [Task Analytics](./KUD/Analytics.md)
+- 📂 **Koha**:
+  - 📝 [Work Log](./Koha/WorkLog.md)
+  - 📈 [Task Analytics](./Koha/Analytics.md)
+- 📂 **Sanchay**:
+  - 📝 [Work Log](./Sanchay/WorkLog.md)
+  - 📈 [Task Analytics](./Sanchay/Analytics.md)
 
 ---
-*Maintained daily with latest dates on top.*
+*Maintained daily with automated Mermaid analytics.*
