@@ -2,6 +2,37 @@
 
 ---
 
+## 📅 04-11-2026
+
+### 🔹 Task 1: Fix "Conversion failed" Error on PO Entry in Store Section (ApproxValue Column)
+- **Page**: `Pages/Sections/PurchaseOrderForAwardedRFQ.aspx.cs`
+- **Issue**: Received a SQL conversion failure exception when clicking the "PO Entry" button in the Store section caused by the `ApproxValue` column.
+- **Solution**: Updated SQL query to safely parse `ApproxValue` as a decimal before evaluating `NULLIF`:
+  ```sql
+  ISNULL(NULLIF(TRY_CONVERT(decimal(18,2), d.ApproxValue), 0), ...)
+  ```
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Change BLDE Association Name
+- **Requirement**: Update the institutional name to **"Bharathia Lingayat Development Association"**.
+- **Solution / Next Steps**: Planning and procedural review required; need to coordinate with the project team before applying database and interface changes.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+### 🔹 Task 3: Item Description Field for Store In-Charge in PO (Follow-up from 03-11)
+- **Original Date**: `03-11-2026`
+- **Page**: PO Generation / Store Section
+- **Requirement**: Provide a textbox allowing the Store In-charge to input a specific description for each item, displayed directly below the item on the PO.
+- **Solution / Resolution**: Inspected and debugged the workflow; verified that item descriptions are already supported under the "Specification" field. Users can modify this specification during Indent Forwarding and Indent Reviewing, fulfilling the requirement without redundant schema changes.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved today)*
+
+---
+
+<br/>
+
 ## 📅 03-11-2026
 
 ### 🔹 Task 1: Transfer 3 Approved Indents to Store Section for PO Generation
@@ -36,7 +67,7 @@
 - **Page**: PO Generation / Store Section
 - **Requirement**: Add a textbox allowing the Store In-charge to input a specific description for each item, which must display directly below the item row on the generated Purchase Order.
 - **Solution**: Requirement under review; need to discuss implementation details and UI placement with senior developer.
-- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 04-11-2026)*
 
 ---
 

@@ -4,14 +4,14 @@
 
 ## 📈 Overall Metrics
 
-- **Total Tasks**: `8`
-- **Completed**: `7` (✅)
+- **Total Tasks**: `11`
+- **Completed**: `10` (✅)
 - **Pending**: `1` (⏳)
-- **Resolution Rate**: `87.5%`
+- **Resolution Rate**: `90.9%`
 
 ```mermaid
 pie title Task Status Breakdown
-    "Completed" : 7
+    "Completed" : 10
     "Pending" : 1
 ```
 
@@ -19,16 +19,17 @@ pie title Task Status Breakdown
 
 | Date | Completed | Pending | Total | Status |
 | :---: | :---: | :---: | :---: | :---: |
-| 03-11-2026 | 3 | 1 | 4 | ⏳ 1 In Progress |
+| 04-11-2026 | 2 | 1 | 3 | ⏳ 1 In Progress |
+| 03-11-2026 | 4 | 0 | 4 | ✅ All Done |
 | 02-11-2026 | 4 | 0 | 4 | ✅ All Done |
 
 ```mermaid
 xychart-beta
     title "Tasks Created vs Resolved by Date"
-    x-axis ["02-11-2026", "03-11-2026"]
+    x-axis ["02-11-2026", "03-11-2026", "04-11-2026"]
     y-axis "Number of Tasks" 0 --> 10
-    bar [4, 4]
-    line [4, 3]
+    bar [4, 4, 3]
+    line [4, 4, 2]
 ```
 
 *Bar: Total Created | Line: Resolved*
