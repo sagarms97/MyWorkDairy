@@ -49,6 +49,14 @@
 
 ---
 
+### 🔹 Task 7: Remove Mobile Number Validation for Vendor Registration at Admin Level
+- **Page**: `AddVendors.aspx` (Admin Level)
+- **Issue**: Certain vendors do not have or provide a mobile number during initial registration, but the form blocks submission.
+- **Solution**: Remove mandatory required-field validation for the mobile number field on the admin's `AddVendors` page.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
 <br/>
 
 ## 📅 05-11-2026
