@@ -2,6 +2,31 @@
 
 ---
 
+## 📅 05-11-2026
+
+### 🔹 Task 1: Crystal Reports Display Failure / Error
+- **Error**: `cers#cert_rpt#16u10828#4465#22-23#0#-1#abs-admin#1258`
+- **Solution**: Built the latest project code and copied the compiled `release` folder contents into the Crystal Reports directory.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Adjust Font Size in Crystal Report
+- **Application**: Crystal Report Designer
+- **Solution**: Opened the Crystal Report file (`.rpt`), navigated to **Format Field**, updated font size styling, and saved changes.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 3: Specialization Displaying Incorrectly for Specific Departments
+- **Issue**: Departments beginning with `"POST GRADUATE IN..."` do not have specializations, yet a specialization entry is erroneously displayed in their student details.
+- **Solution**: Investigate codebase logic and corresponding database tables to conditionally hide the specialization field for these post-graduate departments.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 04-11-2026
 
 ### 🔹 Task 1: Deployment & Old Batch Confercode Configuration (Follow-up from 03-11)

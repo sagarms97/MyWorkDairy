@@ -4,15 +4,15 @@
 
 ## 🏆 Executive Summary
 
-- **Total Tasks Logged**: `20`
-- **Total Completed**: `15` (✅)
-- **Total Pending**: `5` (⏳)
-- **Overall Completion Rate**: `75.0%`
+- **Total Tasks Logged**: `26`
+- **Total Completed**: `18` (✅)
+- **Total Pending**: `8` (⏳)
+- **Overall Completion Rate**: `69.2%`
 
 ```mermaid
 pie title Overall Portfolio Resolution
-    "Completed" : 15
-    "Pending" : 5
+    "Completed" : 18
+    "Pending" : 8
 ```
 
 ## 🏢 Project-Wise Breakdown
@@ -20,8 +20,8 @@ pie title Overall Portfolio Resolution
 | Project | Total Tasks | Completed | Pending | Completion Rate | Dashboard |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Koha** | 1 | 0 | 1 | 0.0% | [View Analytics](./Koha/Analytics.md) |
-| **KUD** | 6 | 4 | 2 | 66.7% | [View Analytics](./KUD/Analytics.md) |
-| **Sanchay** | 11 | 10 | 1 | 90.9% | [View Analytics](./Sanchay/Analytics.md) |
+| **KUD** | 9 | 6 | 3 | 66.7% | [View Analytics](./KUD/Analytics.md) |
+| **Sanchay** | 14 | 11 | 3 | 78.6% | [View Analytics](./Sanchay/Analytics.md) |
 | **Staff_Establishment_HR** | 2 | 1 | 1 | 50.0% | [View Analytics](./Staff_Establishment_HR/Analytics.md) |
 
 ## 📅 Multi-Period Performance
@@ -29,23 +29,20 @@ pie title Overall Portfolio Resolution
 ### 📆 Daily Aggregates
 | Date | Created | Resolved | Pending | Day Completion |
 | :---: | :---: | :---: | :---: | :---: |
+| 05-11-2026 | 6 | 3 | 3 | 50% |
 | 04-11-2026 | 4 | 3 | 1 | 75% |
-| 03-11-2026 | 8 | 5 | 3 | 62% |
-| 02-11-2026 | 6 | 6 | 0 | 100% |
-| 03-10-2026 | 1 | 0 | 1 | 0% |
-| 02-10-2026 | 1 | 1 | 0 | 100% |
+| 03-11-2026 | 9 | 5 | 4 | 56% |
+| 02-11-2026 | 7 | 7 | 0 | 100% |
 
 ### 🗓️ Weekly Summary
 | Week | Total Tasks | Resolved | Pending | Weekly Efficiency |
 | :---: | :---: | :---: | :---: | :---: |
-| 2026-W45 | 18 | 14 | 4 | 78% |
-| 2026-W40 | 2 | 1 | 1 | 50% |
+| 2026-W45 | 26 | 18 | 8 | 69% |
 
 ### 📊 Monthly Overview
 | Month | Total Tasks | Resolved | Pending | Resolution Rate |
 | :---: | :---: | :---: | :---: | :---: |
-| October 2026 | 2 | 1 | 1 | 50% |
-| November 2026 | 18 | 14 | 4 | 78% |
+| November 2026 | 26 | 18 | 8 | 69% |
 
 ---
 *Dashboard auto-updated by GitHub Actions.*

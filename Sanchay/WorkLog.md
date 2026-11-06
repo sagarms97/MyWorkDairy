@@ -2,6 +2,34 @@
 
 ---
 
+## 📅 05-11-2026
+
+### 🔹 Task 1: Provide PO Preview Option Before Forwarding to Purchase Section
+- **Page**: Store Section / `Purchase_order_report.aspx`
+- **Issue**: Store in-charge is unable to verify saved PO details prior to transfer, leading to frequent PO reverts.
+- **Solution**: Added a "PO Preview" button that navigates directly to `Purchase_order_report.aspx`, allowing verification before submission to reduce reverts.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Provide Edit Option for Item Specifications Without Affecting Master Data
+- **Page**: Indent Management / Specification
+- **Issue**: Operators require custom item specifications on the indent without altering the default specifications defined in the Item Master table.
+- **Solution**: Provide an inline edit option for item specifications scoped strictly to the indent transaction without triggering an update to the master table.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+### 🔹 Task 3: GRN and Invoice Uploads Displaying Same Document in Store Section
+- **Page**: `Store_GoodsDelivery.aspx`
+- **Issue**: Users upload separate files for GRN document and Invoice document, but after submission, opening the GRN document erroneously displays the uploaded Invoice document.
+- **Solution**: Investigate file upload and binding logic in `Store_GoodsDelivery.aspx` and verify document storage paths/columns in the database table.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 04-11-2026
 
 ### 🔹 Task 1: Fix "Conversion failed" Error on PO Entry in Store Section (ApproxValue Column)
