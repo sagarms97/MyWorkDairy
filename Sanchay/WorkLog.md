@@ -2,6 +2,55 @@
 
 ---
 
+## 📅 06-11-2026
+
+### 🔹 Task 1: Account Number Validation in Vendor Master
+- **Issue**: The vendor master form allowed duplicate account numbers to be submitted across different vendors.
+- **Solution**: Added validation logic and mandatory checks on the Account Number field to prevent duplicate submissions.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Approved Vendors from Accounts Section Missing in Purchase Section
+- **Issue**: Once a vendor was approved by the Accounts section, the record failed to appear in the Purchase section's queue.
+- **Solution**: Diagnosed the issue in the Vendor Master table where the `IsApproved` column was defaulted to `NULL`. Updated the record status to `0` so pending approvals reliably appear in the Purchase section's pending list.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 3: Enable Mobile Number Login for Vendors Without Email Addresses
+- **Issue**: Vendors currently require an email address as their login identifier; however, several vendors do not possess an active email address. Praveen sir requested an option to allow mobile number as the login ID.
+- **Solution / Next Steps**: Create a dedicated configuration interface allowing administrators to toggle/select whether a vendor's primary login identifier should be their Mobile Number or Email Address, followed by appropriate database schema updates.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+### 🔹 Task 4: Add Search Functionality in Vendor Approval Process
+- **Page**: `Pages/Sections/VendorRequestApproval.aspx`
+- **Issue**: Administrators had to manually scroll through long paginated lists (137+ pages) to locate a specific vendor during approval.
+- **Solution**: Implemented a multi-column search textbox and search/clear buttons allowing instant filtering across Vendor Name, Mobile No, GSTIN, PAN, and Vendor Code with automatic pagination reset.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 5: Item Specification Edit Option Without Affecting Master Data (Follow-up from 05-11)
+- **Original Date**: `05-11-2026`
+- **Issue**: Operators require custom item specifications on the indent without altering default specifications defined in the Item Master table.
+- **Solution / Resolution**: Provided an inline edit option for item specifications scoped strictly to the indent transaction without modifying the master table.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved today)*
+
+---
+
+### 🔹 Task 6: GRN and Invoice Uploads Displaying Same Document (Follow-up from 05-11)
+- **Original Date**: `05-11-2026`
+- **Issue**: Users upload separate files for GRN and Invoice, but after submission, opening the GRN document erroneously displays the Invoice file.
+- **Solution / Resolution**: Fixed the document upload and binding logic in `Store_GoodsDelivery.aspx` and verified database path mappings so both files link and display independently.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved today)*
+
+---
+
+<br/>
+
 ## 📅 05-11-2026
 
 ### 🔹 Task 1: Provide PO Preview Option Before Forwarding to Purchase Section
@@ -16,7 +65,7 @@
 - **Page**: Indent Management / Specification
 - **Issue**: Operators require custom item specifications on the indent without altering the default specifications defined in the Item Master table.
 - **Solution**: Provide an inline edit option for item specifications scoped strictly to the indent transaction without triggering an update to the master table.
-- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 06-11-2026)*
 
 ---
 
@@ -24,7 +73,7 @@
 - **Page**: `Store_GoodsDelivery.aspx`
 - **Issue**: Users upload separate files for GRN document and Invoice document, but after submission, opening the GRN document erroneously displays the uploaded Invoice document.
 - **Solution**: Investigate file upload and binding logic in `Store_GoodsDelivery.aspx` and verify document storage paths/columns in the database table.
-- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 06-11-2026)*
 
 ---
 
