@@ -7,6 +7,9 @@ Personal work tracker for daily queries, solutions, task updates, and project st
 
 ### 📁 Project Logs & Individual Analytics:
 
+- 📂 **ERP**:
+  - 📝 [Work Log](./ERP/WorkLog.md)
+  - 📈 [Task Analytics](./ERP/Analytics.md)
 - 📂 **KUD**:
   - 📝 [Work Log](./KUD/WorkLog.md)
   - 📈 [Task Analytics](./KUD/Analytics.md)
@@ -19,6 +22,9 @@ Personal work tracker for daily queries, solutions, task updates, and project st
 - 📂 **Staff_Establishment_HR**:
   - 📝 [Work Log](./Staff_Establishment_HR/WorkLog.md)
   - 📈 [Task Analytics](./Staff_Establishment_HR/Analytics.md)
+- 📂 **i-Next**:
+  - 📝 [Work Log](./i-Next/WorkLog.md)
+  - 📈 [Task Analytics](./i-Next/Analytics.md)
 
 ---
 *Maintained daily with automated Mermaid analytics.*
