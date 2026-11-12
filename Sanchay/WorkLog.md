@@ -2,6 +2,57 @@
 
 ---
 
+## 📅 12-11-2026
+
+### 🔹 Task 1: Remove Mobile Number Validation for Vendor Registration at Admin Level (Follow-up from 06-11)
+- **Original Date**: `06-11-2026`
+- **Page**: `AddVendors.aspx` (Admin Level)
+- **Issue**: Certain vendors do not have or provide a mobile number during initial registration, but the form blocks submission.
+- **Solution / Resolution**: Removed the mandatory required-field validation for the mobile number field on the admin's `AddVendors` page.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved today)*
+
+---
+
+### 🔹 Task 2: Enable Submission Date Extension for RFQ (Follow-up from 11-11)
+- **Original Date**: `11-11-2026`
+- **Requirement**: Provide authorized users the capability to extend active RFQ deadlines.
+- **Solution / Resolution**: Added an "Update RFQ Date" action allowing authorized personnel to extend valid RFQ submission dates with system audit tracking.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved today)*
+
+---
+
+### 🔹 Task 3: GST Percentage Validation & Auto-Handling for Composite / Unregistered Vendors
+- **Issue 1**: Input field fails to accept `0%` as a valid GST percentage value.
+- **Issue 2**: Composite and Unregistered vendors are exempt from GST; only Regular registered vendors charge GST.
+- **Solution / Next Steps**: Auto-detect vendor registration type upon selection. If Composite or Unregistered, lock and default the GST field to `0%`; enable user GST input only for Regular registered vendors.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+### 🔹 Task 4: Dedicated Credential Provisioning Module for Legacy / Manually Registered Vendors
+- **Page**: Custom Vendor Credential Management Page
+- **Issue**: A blanket default password was unviable because multiple legacy vendors share duplicate contact details or generic emails.
+- **Solution / Implementation**: Developed a dedicated admin interface filtering active vendors offering Goods, Services, or Goods & Services. Set the vendor's Mobile Number as their User ID, generated credentials combining Phone and Email, inserted credentials into the `Users` table upon admin confirmation, and automatically dispatched account setup notification emails.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 5: Automated Email Notification on Vendor Password Reset
+- **Issue**: Vendors currently receive no confirmation receipt or email backup after updating their password on first login.
+- **Solution / Implementation**: Configured an automated email trigger dispatched immediately upon successful password change, providing vendors with written confirmation and self-service password recovery instructions.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 6: Provide OTP Verification for Vendors Post-Login
+- **Requirement**: Implement OTP-based multi-factor authentication for vendors upon successful credential verification.
+- **Solution / Next Steps**: Map and list vendors under the admin-side `Users` management page to support two-factor authentication provisioning, telephone binding, and OTP delivery dispatch.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 11-11-2026
 
 ### 🔹 Task 1: Display Institute Name, Beneficiary Name, and Payable Amount in Accounts PO Approval
@@ -32,7 +83,7 @@
 ### 🔹 Task 4: Enable Submission Date Extension for RFQ
 - **Requirement**: Provide authorized users the capability to extend active RFQ deadlines.
 - **Solution / Next Steps**: Add an "Update RFQ Date" interface action allowing valid date extensions with appropriate audit logging.
-- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 12-11-2026)*
 
 ---
 
@@ -96,7 +147,7 @@
 - **Page**: `AddVendors.aspx` (Admin Level)
 - **Issue**: Certain vendors do not have or provide a mobile number during initial registration, but the form blocks submission.
 - **Solution**: Remove mandatory required-field validation for the mobile number field on the admin's `AddVendors` page.
-- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 12-11-2026)*
 
 ---
 

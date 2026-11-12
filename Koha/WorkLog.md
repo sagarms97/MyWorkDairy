@@ -2,6 +2,26 @@
 
 ---
 
+## 📅 12-11-2026
+
+### 🔹 Task 1: User Guidance on Accession Number Range Filtering for Books
+- **Institute**: Raichur Agri University
+- **Solution**: Connected via UltraViewer remote session; demonstrated how to navigate reports and apply accession number range filters (`BETWEEN ... AND ...`) to query specific book records.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: RFID Middleware Disconnected & Ubuntu Server Login Failure
+- **Institute**: Raichur Agri University
+- **Issue 1**: RFID middleware disconnected from Koha, failing to read book RFID tags during circulation.
+- **Issue 2**: Ubuntu server authentication remains blocked due to an "incorrect password" error.
+- **Solution / Next Steps**: Once server access is restored by the IT administrator, start/restart the SIP2 service daemon and verify connectivity over designated communication ports (`8023`, `3006`, `6001`).
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 11-11-2026
 
 ### 🔹 Task 1: Routine Server & Application Health Checkup

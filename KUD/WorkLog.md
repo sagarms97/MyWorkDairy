@@ -2,6 +2,29 @@
 
 ---
 
+## 📅 12-11-2026
+
+### 🔹 Task 1: Batch Update M.Com 2024–25 Students to Absentia Mode
+- **Issue**: Several M.Com students mistakenly selected `InPerson` mode instead of `Absentia`.
+- **Solution**: Executed backend SQL script targeting M.Com 24–25 batch:
+  ```sql
+  UPDATE [ApplicationMaster]
+  SET isperson = 0, personAbsentia = 'Absentia'
+  WHERE StreamGroup = 'MCOM' AND batch = '24-25'
+  ```
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Investigate MBA Student Appearing in M.Com Student Filter
+- **Issue**: An MBA student record unexpectedly appeared within the M.Com student list.
+- **Root Cause & Solution**: Identified user operational issue—staff had chosen the `"ALL"` stream group filter instead of isolating the specific stream group. Guided staff to select the dedicated `"MCOM"` stream group filter.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 11-11-2026
 
 ### 🔹 Task 1: Correct Result Declaration Date and Confercode for M.Com 2024–25 Batch
