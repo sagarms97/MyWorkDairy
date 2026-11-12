@@ -2,6 +2,49 @@
 
 ---
 
+## 📅 11-11-2026
+
+### 🔹 Task 1: Display Institute Name, Beneficiary Name, and Payable Amount in Accounts PO Approval
+- **Page**: `Request_PurchaseOrderApproval.aspx` (Accounts Section)
+- **Issue**: Essential payment context was missing from the approval interface, requiring staff to cross-check multiple views.
+- **Solution**: Updated backend queries and mapped Institute Name, Beneficiary Name, and Payable Amount directly into the repeater list display.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Duplicate Amount Calculation & Status Column in TDS Calculation Page
+- **Page**: `Tds_Calculation.aspx`
+- **Issue**: The page aggregates amounts redundantly by including both submitted GRN amounts as well as reverted/resubmitted GRN amounts.
+- **Sub-Task (2.1)**: Add a dedicated "Status" column displaying transaction states: *Pending*, *Closed*, *Failed*, *Hold*, or *Revert*.
+- **Solution / Next Steps**: Investigate calculation logic and query filters in `Tds_Calculation.aspx.cs` and coordinate with colleague to align on business rules for handling reverted GRNs.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+### 🔹 Task 3: Integrate Rich Text Editor (CKEditor) for Indent Purpose Textbox
+- **Page**: Indent Creation / Indenter Module
+- **Issue**: When indenters format their purpose with bullet points or line breaks in the standard multiline textbox, formatting is lost and collapsed into a single plain text paragraph upon saving/printing.
+- **Solution / Next Steps**: Replace or bind the Purpose textbox with CKEditor rich text control to preserve formatting, bullet points, and numbered lists into HTML storage.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+### 🔹 Task 4: Enable Submission Date Extension for RFQ
+- **Requirement**: Provide authorized users the capability to extend active RFQ deadlines.
+- **Solution / Next Steps**: Add an "Update RFQ Date" interface action allowing valid date extensions with appropriate audit logging.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+### 🔹 Task 5: Prepare Comprehensive User Manual for Indenter Module
+- **Requirement**: Document the end-to-end indent creation, specification, and forwarding workflow for new indenters.
+- **Solution / Next Steps**: Capture step-by-step UI screenshots and compile them into a standardized PDF user guide.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 06-11-2026
 
 ### 🔹 Task 1: Account Number Validation in Vendor Master

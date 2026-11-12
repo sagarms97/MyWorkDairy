@@ -2,6 +2,22 @@
 
 ---
 
+## 📅 11-11-2026
+
+### 🔹 Task 1: Correct Result Declaration Date and Confercode for M.Com 2024–25 Batch
+- **Issue**: Declaration date incorrectly recorded as `15-04-2025` instead of `18-12-2024` for MCOM batch.
+- **Solution**: Executed backend SQL update in `[ApplicationMaster]`:
+  ```sql
+  UPDATE [ApplicationMaster] 
+  SET CONFERCODE = '52', DateofDeclaration = '18-12-2024'
+  WHERE DateofDeclaration = '15-04-2025' AND StreamGroup = 'MCOM'
+  ```
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 07-11-2026
 
 ### 🔹 Task 1: Add "Outstanding" Class Obtained in Crystal Report
