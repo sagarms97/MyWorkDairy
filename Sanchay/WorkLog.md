@@ -2,6 +2,26 @@
 
 ---
 
+## 📅 13-11-2026
+
+### 🔹 Task 1: Hide Dedicated GRN Document Upload Section at Institute Level
+- **Page**: Store / Goods Receipt Section (Institute Level)
+- **Issue**: Due to client-side browser caching, some users experienced visual display overlap between GRN and Invoice previews. The institute opted to scan both the GRN sheet and Invoice together as a single combined PDF document.
+- **Solution / Implementation**: Advised institute administrators on browser cache clearing, and conditionally hid the separate GRN document upload section from the interface so users submit the single combined document under Invoice upload without confusion.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Provide Alternate Specification / Remarks Textbox for Vendors During Bidding
+- **Page**: Vendor Bidding Portal (`VendorBidSubmission.aspx`)
+- **Issue**: During RFQ bidding, vendors occasionally do not stock the exact item specification requested and wish to propose an equivalent higher or lower variant/grade. Currently, there is no field to convey this deviation.
+- **Solution / Next Steps**: Discuss with the product team and stakeholders regarding adding a "Vendor Proposed Specification / Remarks" field to the item bidding grid and defining whether deviation alerts should be highlighted during quotation comparisons.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 12-11-2026
 
 ### 🔹 Task 1: Remove Mobile Number Validation for Vendor Registration at Admin Level (Follow-up from 06-11)
