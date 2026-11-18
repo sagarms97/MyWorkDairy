@@ -2,6 +2,26 @@
 
 ---
 
+## 📅 17-11-2026
+
+### 🔹 Task 1: Investigate Candidate Count Mismatch in Audit Summary
+- **Page**: `Admin/AuditSummary.aspx`
+- **Issue**: Total Candidates count does not equal the sum of `InPerson` + `Absentia` candidate counts (`Total != InPerson + Absentia`).
+- **Solution / Next Steps**: Audit backend aggregation queries and group-by logic in `AuditSummary.aspx.cs` to identify unmapped/NULL attendance modes causing the discrepancy.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+### 🔹 Task 2: Add Annual / Earlier / All Filter Dropdown
+- **Page**: `Admin/AuditSummary.aspx`
+- **Requirement**: Provide a new dropdown allowing administrative users to filter summary metrics by *Annual*, *Earlier*, or *All*.
+- **Solution / Next Steps**: Add the dropdown control to the filter panel and wire it into the summary query parameters.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 12-11-2026
 
 ### 🔹 Task 1: Batch Update M.Com 2024–25 Students to Absentia Mode

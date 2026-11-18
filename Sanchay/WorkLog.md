@@ -2,6 +2,52 @@
 
 ---
 
+## 📅 17-11-2026
+
+### 🔹 Task 1: Resolve File Upload Failures During Online Vendor Registration
+- **Page**: `VendorRegistration.aspx`
+- **Issue**: Mandatory registration files occasionally failed to upload/bind during form submission due to an asynchronous postback interruption.
+- **Solution**: Implemented pre-submission validation at the code level to check file payloads before commit, preventing data loss.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Provide OTP Verification for Vendors Post-Login (Follow-up from 12-11)
+- **Original Date**: `12-11-2026`
+- **Requirement**: Implement OTP-based multi-factor authentication for vendors upon successful credential verification.
+- **Solution / Resolution**: Mapped and listed vendors under the admin-side `Users` management page to support two-factor authentication provisioning, telephone binding, and OTP delivery dispatch.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 17-11-2026)*
+
+---
+
+### 🔹 Task 3: Integrate Rich Text Editor (CKEditor) for Indent Purpose Textbox (Follow-up from 11-11)
+- **Original Date**: `11-11-2026`
+- **Page**: Indent Creation / Indenter Module
+- **Issue**: When indenters format their purpose with bullet points or line breaks in the standard multiline textbox, formatting was lost upon saving/printing.
+- **Solution / Resolution**: Integrated CKEditor rich text control to preserve formatting, bullet points, and numbered lists into HTML storage.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 17-11-2026)*
+
+---
+
+### 🔹 Task 4: Enable Mobile Number Login for Vendors Without Email Addresses (Follow-up from 06-11)
+- **Original Date**: `06-11-2026`
+- **Page**: `VendorCredentials.aspx`
+- **Issue**: Vendors require an email address as their login identifier; however, several vendors do not possess an active email address.
+- **Solution / Resolution**: Created a dedicated configuration interface allowing administrators to toggle/select whether a vendor's primary login identifier should be their Mobile Number or Email Address, followed by appropriate database updates.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 17-11-2026)*
+
+---
+
+### 🔹 Task 5: GST Percentage Validation & Auto-Handling for Composite / Unregistered Vendors (Follow-up from 12-11)
+- **Original Date**: `12-11-2026`
+- **Issue**: Input field failed to accept `0%` as a valid GST percentage value; Composite and Unregistered vendors are exempt from GST while only Regular registered vendors charge GST.
+- **Solution / Resolution**: Implemented auto-detection of vendor registration type upon selection. If Composite or Unregistered, the system locks and defaults the GST field to `0%`; user GST input is enabled only for Regular registered vendors.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 17-11-2026)*
+
+---
+
+<br/>
+
 ## 📅 13-11-2026
 
 ### 🔹 Task 1: Hide Dedicated GRN Document Upload Section at Institute Level
@@ -45,7 +91,7 @@
 - **Issue 1**: Input field fails to accept `0%` as a valid GST percentage value.
 - **Issue 2**: Composite and Unregistered vendors are exempt from GST; only Regular registered vendors charge GST.
 - **Solution / Next Steps**: Auto-detect vendor registration type upon selection. If Composite or Unregistered, lock and default the GST field to `0%`; enable user GST input only for Regular registered vendors.
-- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 17-11-2026)*
 
 ---
 
@@ -67,7 +113,7 @@
 ### 🔹 Task 6: Provide OTP Verification for Vendors Post-Login
 - **Requirement**: Implement OTP-based multi-factor authentication for vendors upon successful credential verification.
 - **Solution / Next Steps**: Map and list vendors under the admin-side `Users` management page to support two-factor authentication provisioning, telephone binding, and OTP delivery dispatch.
-- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 17-11-2026)*
 
 ---
 
@@ -94,9 +140,9 @@
 
 ### 🔹 Task 3: Integrate Rich Text Editor (CKEditor) for Indent Purpose Textbox
 - **Page**: Indent Creation / Indenter Module
-- **Issue**: When indenters format their purpose with bullet points or line breaks in the standard multiline textbox, formatting is lost and collapsed into a single plain text paragraph upon saving/printing.
+- **Issue**: When indenters format their purpose with bullet points or line breaks in the standard multiline textbox, formatting was lost and collapsed into a single plain text paragraph upon saving/printing.
 - **Solution / Next Steps**: Replace or bind the Purpose textbox with CKEditor rich text control to preserve formatting, bullet points, and numbered lists into HTML storage.
-- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 17-11-2026)*
 
 ---
 
@@ -135,7 +181,7 @@
 ### 🔹 Task 3: Enable Mobile Number Login for Vendors Without Email Addresses
 - **Issue**: Vendors currently require an email address as their login identifier; however, several vendors do not possess an active email address. Praveen sir requested an option to allow mobile number as the login ID.
 - **Solution / Next Steps**: Create a dedicated configuration interface allowing administrators to toggle/select whether a vendor's primary login identifier should be their Mobile Number or Email Address, followed by appropriate database schema updates.
-- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 17-11-2026)*
 
 ---
 
