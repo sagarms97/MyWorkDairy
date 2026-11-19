@@ -2,13 +2,42 @@
 
 ---
 
+## 📅 18-11-2026
+
+### 🔹 Task 1: Resolve Candidate Count Mismatch in Audit Summary (Follow-up from 17-11)
+- **Original Date**: `17-11-2026`
+- **Page**: `Admin/AuditSummary.aspx`
+- **Issue**: Total Candidates count did not equal `InPerson + Absentia` due to non-rank holders having inconsistent attendance mode records.
+- **Solution / Resolution**: Standardized non-rank holder attendance modes for Academic Year 2024–25 via backend database update:
+  ```sql
+  UPDATE [ApplicationMaster] 
+  SET isPerson = 0, PersonAbsentia = 'Absentia'
+  WHERE AcademicYear = '24-25' 
+    AND (PersonAbsentia = 'Person' OR isPerson = '1') 
+    AND isRankHolder != '1'
+  ```
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved today)*
+
+---
+
+### 🔹 Task 2: Add Annual / Earlier / All Filter Dropdown to Audit Summary (Follow-up from 17-11)
+- **Original Date**: `17-11-2026`
+- **Page**: `Admin/AuditSummary.aspx`
+- **Requirement**: Provide a dropdown allowing administrative users to filter summary metrics by *Annual*, *Earlier*, or *All*.
+- **Solution / Resolution**: Added the dropdown control to the filter panel and integrated the selected parameter into the backend summary aggregation queries.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved today)*
+
+---
+
+<br/>
+
 ## 📅 17-11-2026
 
 ### 🔹 Task 1: Investigate Candidate Count Mismatch in Audit Summary
 - **Page**: `Admin/AuditSummary.aspx`
 - **Issue**: Total Candidates count does not equal the sum of `InPerson` + `Absentia` candidate counts (`Total != InPerson + Absentia`).
 - **Solution / Next Steps**: Audit backend aggregation queries and group-by logic in `AuditSummary.aspx.cs` to identify unmapped/NULL attendance modes causing the discrepancy.
-- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 18-11-2026)*
 
 ---
 
@@ -16,7 +45,7 @@
 - **Page**: `Admin/AuditSummary.aspx`
 - **Requirement**: Provide a new dropdown allowing administrative users to filter summary metrics by *Annual*, *Earlier*, or *All*.
 - **Solution / Next Steps**: Add the dropdown control to the filter panel and wire it into the summary query parameters.
-- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square) *(Resolved on 18-11-2026)*
 
 ---
 

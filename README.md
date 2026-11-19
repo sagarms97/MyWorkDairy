@@ -16,6 +16,9 @@ Personal work tracker for daily queries, solutions, task updates, and project st
 - 📂 **Koha**:
   - 📝 [Work Log](./Koha/WorkLog.md)
   - 📈 [Task Analytics](./Koha/Analytics.md)
+- 📂 **Room_Booking**:
+  - 📝 [Work Log](./Room_Booking/WorkLog.md)
+  - 📈 [Task Analytics](./Room_Booking/Analytics.md)
 - 📂 **Sanchay**:
   - 📝 [Work Log](./Sanchay/WorkLog.md)
   - 📈 [Task Analytics](./Sanchay/Analytics.md)

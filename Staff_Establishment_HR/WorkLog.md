@@ -2,6 +2,23 @@
 
 ---
 
+## 📅 18-11-2026
+
+### 🔹 Task 1: Capture Voter ID and Address Details in Staff Master
+- **Table / Schema**: `[dbo].[ESTB_StaffDetails]`
+- **Requirement**: Enable staff records to store Voter ID numbers and corresponding registered addresses.
+- **Solution / Implementation**: Added two new database columns and integrated front-end textboxes bound across `INSERT`, `UPDATE`, and `SELECT` query procedures:
+  ```sql
+  ALTER TABLE [dbo].[ESTB_StaffDetails]
+  ADD [VoterID] VARCHAR(50) NULL,
+      [AddressOnVoterID] VARCHAR(500) NULL;
+  ```
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 03-11-2026
 
 ### 🔹 Task 1: Provide Option to Delete Uploaded Document
