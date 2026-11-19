@@ -2,6 +2,33 @@
 
 ---
 
+## 📅 19-11-2026
+
+### 🔹 Task 1: Enable Editable Specifications on Item Textbox During Indent Creation
+- **Page**: Indent Creation / Indenter Module
+- **Issue**: Indenters were unable to customize or modify item specifications from default master values because the input was locked.
+- **Solution**: Removed the `ReadOnly` attribute from the specification textbox to permit freeform user modifications.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Fix College/Institute Name Mismatch During Purchase Order Review
+- **Page**: Purchase Order Review / Purchase Section
+- **Issue**: When reviewing generated Purchase Orders, the institute/college name incorrectly mapped to a different indent record.
+- **Solution / Next Steps**: Inspect query joins in the review page code-behind and add explicit `InstituteCode` (`ic`) and `sc` matching to ensure correct college name mapping.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+### 🔹 Task 3: Feasibility Analysis for Multi-PO Vendor Consolidation on Emergency Indents
+- **Issue**: An emergency indent comprises items spanning three distinct categories intended to be fulfilled by a single vendor, currently necessitating fragmented PO generation.
+- **Solution / Next Steps**: Evaluate multi-select checkbox workflows with the engineering team to assess the feasibility of batching multiple PO line items into a unified vendor dispatch.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 17-11-2026
 
 ### 🔹 Task 1: Resolve File Upload Failures During Online Vendor Registration

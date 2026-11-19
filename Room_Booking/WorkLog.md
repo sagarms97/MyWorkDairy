@@ -2,6 +2,18 @@
 
 ---
 
+## 📅 19-11-2026
+
+### 🔹 Task 1: Cancel Erroneous Checkout Receipt for Guest (Irranna)
+- **Scope**: Front Desk / Room Reservation
+- **Issue**: BTM user inadvertently checked out guest "Irranna", who is currently still residing at the property.
+- **Solution / Resolution**: Authenticated via administrative privileges and deleted the premature checkout receipt, successfully restoring the guest's active check-in record.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 18-11-2026
 
 ### 🔹 Task 1: Display Children Count and Refundable Amount on Booking Reports
