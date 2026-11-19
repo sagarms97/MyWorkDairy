@@ -225,8 +225,63 @@ def update_main_readme(projects):
     lines.append("\n---\n*Maintained daily with automated Mermaid analytics.*")
     return "\n".join(lines)
 
+
+def export_project_csvs(projects):
+    import csv
+    for proj_name, data in projects.items():
+        worklog_path = os.path.join(BASE_DIR, proj_name, 'WorkLog.md')
+        if not os.path.isfile(worklog_path):
+            continue
+        with open(worklog_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        date_blocks = re.split(r'##\s*📅\s*(\d{2}-\d{2}-\d{4})', content)
+        rows = []
+        if len(date_blocks) > 1:
+            for i in range(1, len(date_blocks), 2):
+                date_str = date_blocks[i].strip()
+                block_text = date_blocks[i+1]
+                task_blocks = re.split(r'###\s*🔹\s*Task\s*\d+:\s*', block_text)
+                for t_idx, t_block in enumerate(task_blocks[1:], 1):
+                    lines = [l.strip() for l in t_block.strip().split('\n') if l.strip()]
+                    task_title = lines[0] if lines else ''
+                    page = ''
+                    issue = ''
+                    solution = ''
+                    status = 'Pending'
+                    for l in lines[1:]:
+                        if l.startswith('- **Page**') or l.startswith('- **Page / Config**') or l.startswith('- **Table / Schema**'):
+                            page = re.sub(r'^- \*\*[^*]+\*\*:\s*', '', l)
+                        elif l.startswith('- **Issue**') or l.startswith('- **Requirement**'):
+                            issue = re.sub(r'^- \*\*[^*]+\*\*:\s*', '', l)
+                        elif l.startswith('- **Solution**') or l.startswith('- **Solution / Resolution**') or l.startswith('- **Solution / Next Steps**'):
+                            solution = re.sub(r'^- \*\*[^*]+\*\*:\s*', '', l)
+                        elif l.startswith('- **Status**'):
+                            status = 'Completed' if 'Completed' in l else 'Pending'
+
+                    if 'Completed' in t_block:
+                        status = 'Completed'
+                    if not issue and task_title:
+                        issue = task_title
+
+                    rows.append({
+                        'Date': date_str,
+                        'Task Number': f'Task {t_idx}',
+                        'Task': task_title,
+                        'Page / Area': page,
+                        'Query / Issue': issue,
+                        'Solution / Resolution': solution,
+                        'Status': status
+                    })
+        csv_file = os.path.join(BASE_DIR, proj_name, f'{proj_name}_Work_Log.csv')
+        with open(csv_file, 'w', newline='', encoding='utf-8-sig') as cf:
+            writer = csv.DictWriter(cf, fieldnames=['Date', 'Task Number', 'Task', 'Page / Area', 'Query / Issue', 'Solution / Resolution', 'Status'])
+            writer.writeheader()
+            writer.writerows(rows)
+
 def main():
     projects = parse_worklogs()
+    export_project_csvs(projects)
     
     # Generate Project Analytics
     for proj_name, data in projects.items():
