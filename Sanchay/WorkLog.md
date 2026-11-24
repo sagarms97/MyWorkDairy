@@ -2,6 +2,82 @@
 
 ---
 
+## 📅 24-11-2026
+
+### 🔹 Task 1: Display Indent Subject Name in Indent Draft Section
+- **Page**: Indent Draft Section
+- **Issue**: Users could not see the indent subject line in the drafts table, only the generic indent type.
+- **Solution / Resolution**: Replaced the redundant "Indent Type" column with the "Subject Name" column in the draft list view.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Route Emergency Work Order (WO_EMG) Indents Directly to Store Section
+- **Page**: Indent Approval / Workflow Engine
+- **Issue**: Emergency Work Order indents were not appearing in the Store section after approval.
+- **Solution / Resolution**: Updated the approval routing logic: any indent flagged as `PO_EMG` (Emergency Purchase Order) or `WO_EMG` (Emergency Work Order) now routes directly to the Store section upon approval.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 3: Mandatory Remarks Field for Indent Forwarding and Reverting
+- **Page**: Indent Approval & Forwarding
+- **Issue**: Reviewers and approvers had no provision to add remarks or explanations when transferring or reverting an indent.
+- **Solution / Resolution**: Integrated a dedicated remarks textbox and enforced validation during transfer and revert actions.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 4: Display Remarks on GRN Print Receipt
+- **Page**: Goods Receipt Note (GRN) Print / Report View
+- **Issue**: Reviewer/Store remarks were missing from the physical and PDF GRN printouts.
+- **Solution / Resolution**: Added a dedicated "Remarks" row in the GRN print report template dynamically populated from the database upon clicking Print.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+<br/>
+
+## 📅 21-11-2026
+
+### 🔹 Task 1: Fix Duplicate Payment Settlements Caused by Reverted GRN Redundancy
+- **Page**: `Accounts_PaymentSettlements.aspx`
+- **Issue**: Duplicate payment entries were displaying across settlement queues due to duplicate GRN records being created upon resubmission.
+- **Solution / Resolution**: Resolved by fixing the root-cause GRN revert process (deleting associated records from `payments_approved` during revert), which automatically eliminated duplicate payment requests.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Restrict Submission of Empty Indents (Indents with Zero Items)
+- **Page**: Indent Creation / Indenter Module
+- **Issue**: The system allowed users to submit blank indents containing no line items.
+- **Solution / Resolution**: Added pre-submission validation logic and dynamically hid/disabled the "Submit Indent" button whenever the item count is zero.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+<br/>
+
+## 📅 20-11-2026
+
+### 🔹 Task 1: Implement Section-Level Unified Indent Tracker
+- **Page**: Indent Tracking Module
+- **Issue**: Department and section staff lacked a centralized dashboard to monitor indents across all institutions simultaneously, forcing them to authenticate into each institute account separately to check approval status.
+- **Solution / Resolution**: Developed a dedicated central tracker page providing aggregated indent visibility, current approval stage, and a complete lifecycle timeline across all institutions.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Prevent Duplicate GRN Creation on Resubmission of Reverted GRNs
+- **Page**: Store / Goods Receipt Section
+- **Issue**: Resubmitting a previously reverted GRN was generating redundant duplicate GRN records and orphaned payment requests.
+- **Solution / Resolution**: Updated the revert workflow to ensure reverted GRNs reside strictly in the reverted queue, and added cleanup logic to delete corresponding entries from the `payments_approved` table upon revert, eliminating duplicate payment generation.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 19-11-2026
 
 ### 🔹 Task 1: Enable Editable Specifications on Item Textbox During Indent Creation

@@ -4,14 +4,14 @@
 
 ## 📈 Overall Metrics
 
-- **Total Tasks**: `42`
-- **Completed**: `36` (✅)
+- **Total Tasks**: `50`
+- **Completed**: `44` (✅)
 - **Pending**: `6` (⏳)
-- **Resolution Rate**: `85.7%`
+- **Resolution Rate**: `88.0%`
 
 ```mermaid
 pie title Task Status Breakdown
-    "Completed" : 36
+    "Completed" : 44
     "Pending" : 6
 ```
 
@@ -19,6 +19,9 @@ pie title Task Status Breakdown
 
 | Date | Completed | Pending | Total | Status |
 | :---: | :---: | :---: | :---: | :---: |
+| 24-11-2026 | 4 | 0 | 4 | ✅ All Done |
+| 21-11-2026 | 2 | 0 | 2 | ✅ All Done |
+| 20-11-2026 | 2 | 0 | 2 | ✅ All Done |
 | 19-11-2026 | 1 | 2 | 3 | ⏳ 2 In Progress |
 | 17-11-2026 | 5 | 0 | 5 | ✅ All Done |
 | 13-11-2026 | 1 | 1 | 2 | ⏳ 1 In Progress |
@@ -33,10 +36,10 @@ pie title Task Status Breakdown
 ```mermaid
 xychart-beta
     title "Tasks Created vs Resolved by Date"
-    x-axis ["02-11-2026", "03-11-2026", "04-11-2026", "05-11-2026", "06-11-2026", "11-11-2026", "12-11-2026", "13-11-2026", "17-11-2026", "19-11-2026"]
+    x-axis ["02-11-2026", "03-11-2026", "04-11-2026", "05-11-2026", "06-11-2026", "11-11-2026", "12-11-2026", "13-11-2026", "17-11-2026", "19-11-2026", "20-11-2026", "21-11-2026", "24-11-2026"]
     y-axis "Number of Tasks" 0 --> 10
-    bar [4, 4, 3, 3, 7, 5, 6, 2, 5, 3]
-    line [4, 4, 2, 3, 7, 3, 6, 1, 5, 1]
+    bar [4, 4, 3, 3, 7, 5, 6, 2, 5, 3, 2, 2, 4]
+    line [4, 4, 2, 3, 7, 3, 6, 1, 5, 1, 2, 2, 4]
 ```
 
 *Bar: Total Created | Line: Resolved*
