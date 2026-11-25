@@ -1,4 +1,4 @@
 ﻿Date,Task Number,Task,Page / Area,Query / Issue,Solution / Resolution,Status
-18-11-2026,Task 1,Capture Voter ID and Address Details in Staff Master,`[dbo].[ESTB_StaffDetails]`,Enable staff records to store Voter ID numbers and corresponding registered addresses.,,Completed
+18-11-2026,Task 1,Capture Voter ID and Address Details in Staff Master,`[dbo].[ESTB_StaffDetails]`,Enable staff records to store Voter ID numbers and corresponding registered addresses.,"Added two new database columns and integrated front-end textboxes bound across `INSERT`, `UPDATE`, and `SELECT` query procedures:",Completed
 03-11-2026,Task 1,Provide Option to Delete Uploaded Document,Document Management / HR Module,Allow users to delete specific uploaded documents.,,Pending
 02-11-2026,Task 1,Increase Document Upload Limit to Minimum 10 MB,`web.config`,Enable upload support for larger employee documents (at least 10 MB).,Updated `maxRequestLength` and `maxAllowedContentLength` parameters in `web.config`.,Completed

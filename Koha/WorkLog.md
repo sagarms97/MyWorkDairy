@@ -2,6 +2,18 @@
 
 ---
 
+## 📅 25-11-2026
+
+### 🔹 Task 1: Audit Server Health and Process Load Metrics
+- **Scope**: Koha Production Server / Performance Monitoring
+- **Issue / Requirement**: Investigate site performance, health status, and live process load.
+- **Solution / Resolution**: Logged into the Koha server via terminal, inspected running system processes and CPU/memory utilization, and performed a graceful server restart to clear accumulated load and restore optimal responsiveness.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 13-11-2026
 
 ### 🔹 Task 1: Resolve Ubuntu Server Authentication Failure (Follow-up from 03-11 / 12-11)

@@ -4,15 +4,15 @@
 
 ## 🏆 Executive Summary
 
-- **Total Tasks Logged**: `81`
-- **Total Completed**: `71` (✅)
-- **Total Pending**: `10` (⏳)
-- **Overall Completion Rate**: `87.7%`
+- **Total Tasks Logged**: `90`
+- **Total Completed**: `78` (✅)
+- **Total Pending**: `12` (⏳)
+- **Overall Completion Rate**: `86.7%`
 
 ```mermaid
 pie title Overall Portfolio Resolution
-    "Completed" : 71
-    "Pending" : 10
+    "Completed" : 78
+    "Pending" : 12
 ```
 
 ## 🏢 Project-Wise Breakdown
@@ -21,10 +21,10 @@ pie title Overall Portfolio Resolution
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **ERP** | 1 | 1 | 0 | 100.0% | [View Analytics](./ERP/Analytics.md) |
 | **i-Next** | 1 | 1 | 0 | 100.0% | [View Analytics](./i-Next/Analytics.md) |
-| **Koha** | 6 | 6 | 0 | 100.0% | [View Analytics](./Koha/Analytics.md) |
-| **KUD** | 18 | 15 | 3 | 83.3% | [View Analytics](./KUD/Analytics.md) |
-| **Room_Booking** | 2 | 2 | 0 | 100.0% | [View Analytics](./Room_Booking/Analytics.md) |
-| **Sanchay** | 50 | 44 | 6 | 88.0% | [View Analytics](./Sanchay/Analytics.md) |
+| **Koha** | 7 | 7 | 0 | 100.0% | [View Analytics](./Koha/Analytics.md) |
+| **KUD** | 20 | 17 | 3 | 85.0% | [View Analytics](./KUD/Analytics.md) |
+| **Room_Booking** | 6 | 6 | 0 | 100.0% | [View Analytics](./Room_Booking/Analytics.md) |
+| **Sanchay** | 52 | 44 | 8 | 84.6% | [View Analytics](./Sanchay/Analytics.md) |
 | **Staff_Establishment_HR** | 3 | 2 | 1 | 66.7% | [View Analytics](./Staff_Establishment_HR/Analytics.md) |
 
 ## 📅 Multi-Period Performance
@@ -32,6 +32,7 @@ pie title Overall Portfolio Resolution
 ### 📆 Daily Aggregates
 | Date | Created | Resolved | Pending | Day Completion |
 | :---: | :---: | :---: | :---: | :---: |
+| 25-11-2026 | 9 | 7 | 2 | 78% |
 | 24-11-2026 | 5 | 5 | 0 | 100% |
 | 21-11-2026 | 2 | 2 | 0 | 100% |
 | 20-11-2026 | 2 | 2 | 0 | 100% |
@@ -51,7 +52,7 @@ pie title Overall Portfolio Resolution
 ### 🗓️ Weekly Summary
 | Week | Total Tasks | Resolved | Pending | Weekly Efficiency |
 | :---: | :---: | :---: | :---: | :---: |
-| 2026-W48 | 5 | 5 | 0 | 100% |
+| 2026-W48 | 14 | 12 | 2 | 86% |
 | 2026-W47 | 19 | 17 | 2 | 89% |
 | 2026-W46 | 21 | 18 | 3 | 86% |
 | 2026-W45 | 36 | 31 | 5 | 86% |
@@ -59,7 +60,7 @@ pie title Overall Portfolio Resolution
 ### 📊 Monthly Overview
 | Month | Total Tasks | Resolved | Pending | Resolution Rate |
 | :---: | :---: | :---: | :---: | :---: |
-| November 2026 | 81 | 71 | 10 | 88% |
+| November 2026 | 90 | 78 | 12 | 87% |
 
 ---
 *Dashboard auto-updated by GitHub Actions.*

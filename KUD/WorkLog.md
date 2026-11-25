@@ -2,6 +2,24 @@
 
 ---
 
+## 📅 25-11-2026
+
+### 🔹 Task 1: Adjust Font Size in Crystal Report
+- **Requirement / Issue**: Modify font size within the Crystal Report layout to improve document presentation.
+- **Solution / Implementation**: Opened the Crystal Report definition, navigated to the Formula Workshop / tab, and updated the formula to set the desired font size.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Resolve Stream Missing from Selection List
+- **Issue**: Academic stream was not appearing in the active selection dropdown list.
+- **Solution / Resolution**: Identified a mismatch in the stream group name mapping; corrected the stream group name, and the stream immediately appeared in the selection list.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 24-11-2026
 
 ### 🔹 Task 1: Configure New Academic Stream — Master of Journalism and Mass Communication

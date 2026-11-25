@@ -2,6 +2,26 @@
 
 ---
 
+## 📅 25-11-2026
+
+### 🔹 Task 1: Enable Merging of Matching Indent Codes for Consolidated PO Entry
+- **Page / Module**: Purchase Section / Purchase Order (PO) Entry
+- **Issue**: Users could not combine separate line items sharing the same indent code from the same vendor into a single consolidated PO.
+- **Solution / Resolution**: Provisioned item selection checkboxes for matching indent codes and added a "Merge" button to consolidate identical items under a single PO and vendor record.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+### 🔹 Task 2: Fix Workflow Routing for Indents Reverted by Purchase Section
+- **Page / Module**: Indent Workflow / Section Routing
+- **Issue**: When an indent was reverted by the Purchase section, it was appearing in both Unit and Store sections rather than solely routing back to the Store section.
+- **Solution / Resolution**: Investigating and modifying section workflow filters to ensure reverted indents route exclusively to the Store section.
+- **Status**: ![](https://img.shields.io/badge/Status-Pending-yellow?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 24-11-2026
 
 ### 🔹 Task 1: Display Indent Subject Name in Indent Draft Section

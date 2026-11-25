@@ -252,9 +252,9 @@ def export_project_csvs(projects):
                     for l in lines[1:]:
                         if l.startswith('- **Page**') or l.startswith('- **Page / Config**') or l.startswith('- **Table / Schema**'):
                             page = re.sub(r'^- \*\*[^*]+\*\*:\s*', '', l)
-                        elif l.startswith('- **Issue**') or l.startswith('- **Requirement**'):
+                        elif l.startswith('- **Issue') or l.startswith('- **Requirement') or l.startswith('- **Scope'):
                             issue = re.sub(r'^- \*\*[^*]+\*\*:\s*', '', l)
-                        elif l.startswith('- **Solution**') or l.startswith('- **Solution / Resolution**') or l.startswith('- **Solution / Next Steps**'):
+                        elif l.startswith('- **Solution**') or l.startswith('- **Solution / Resolution**') or l.startswith('- **Solution / Next Steps**') or l.startswith('- **Solution / Implementation**'):
                             solution = re.sub(r'^- \*\*[^*]+\*\*:\s*', '', l)
                         elif l.startswith('- **Status**'):
                             status = 'Completed' if 'Completed' in l else 'Pending'

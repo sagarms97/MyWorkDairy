@@ -2,6 +2,42 @@
 
 ---
 
+## 📅 25-11-2026
+
+### 🔹 Task 1: Resolve Amount Discrepancy in Reconciliation Report
+- **Page / Report**: Financial / Reconciliation Report
+- **Issue**: Reconciliation report was displaying inaccurate totals and discrepancy amounts.
+- **Solution / Resolution**: Reviewed the backend aggregation logic and formula calculations; corrected the amount computation scripts to ensure reconciled values match actual transaction amounts accurately.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Correct Print Layout Alignment in Portrait Orientation
+- **Scope**: Print View / Document Export
+- **Issue**: Print output was overflowing margins or misaligned when printing in portrait orientation.
+- **Solution / Resolution**: Adjusted layout scaling percentage under print settings/CSS so that all columns and table elements fit cleanly within the standard portrait print window.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 3: Fix Webcam Capture Functionality
+- **Scope**: Guest Photo Capture / Front Desk Module
+- **Issue**: Webcam interface failed to initialize or trigger camera feed for guest photo capture.
+- **Solution / Resolution**: Deployed the missing `webcam.js` library file directly into the published production web application assets directory.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 4: Fix Rent Calculation / Multiplication Bug for Dormitory Rooms
+- **Page / Module**: Room Booking / Tariff Calculation Engine
+- **Issue**: Dormitory bookings were incorrectly multiplying or calculating rental charges upon reservation.
+- **Solution / Resolution**: Updated the rate calculation code in the Room Booking page to evaluate dormitory per-bed tariff logic properly without compounding multipliers.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 19-11-2026
 
 ### 🔹 Task 1: Cancel Erroneous Checkout Receipt for Guest (Irranna)
