@@ -2,6 +2,18 @@
 
 ---
 
+## 📅 26-11-2026
+
+### 🔹 Task 1: Transfer Indents from RFQ to Emergency Indents for Direct Store Routing
+- **Page / Module**: Indent Workflow / Store Section
+- **Issue / Requirement**: Two pending indents required immediate transfer to the Store section.
+- **Solution / Resolution**: Converted/transferred the two target indents from standard RFQ Indents to Emergency Indents (`PO_EMG`), allowing them to bypass intermediate RFQ processing and route directly into the Store section.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 25-11-2026
 
 ### 🔹 Task 1: Enable Merging of Matching Indent Codes for Consolidated PO Entry

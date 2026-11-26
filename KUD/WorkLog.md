@@ -2,6 +2,25 @@
 
 ---
 
+## 📅 26-11-2026
+
+### 🔹 Task 1: Resolve Missing M.A Rank Students in Address List Report
+- **Page / Report**: Convocation / Address List Report
+- **Issue**: M.A rank holder students were not appearing in the generated Address List report.
+- **Solution / Resolution**: Identified that administrative filters were set to query `InPerson` attendees, but the candidate records were recorded as `Absentia`; updated the attendance mode status to `InPerson` in the backend database for these eligible rank holders so they populate correctly.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+### 🔹 Task 2: Configure New Academic Stream — Master of Technology (M.Tech)
+- **Requirement / Scope**: Introduce and configure the "Master of Technology" postgraduate stream in the university master tables.
+- **Solution / Resolution**: Created and configured the new Master of Technology stream with necessary stream codes and academic master parameters.
+- **Status**: ![](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
+---
+
+<br/>
+
 ## 📅 25-11-2026
 
 ### 🔹 Task 1: Adjust Font Size in Crystal Report
